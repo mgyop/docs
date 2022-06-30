@@ -9,5 +9,5 @@ docsify init ./docs
 ```
 ## 启动项目
 ```
-docsify serve golang
+docsify serve flutter
 ```
