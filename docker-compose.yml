@@ -1,0 +1,41 @@
+version: "3.7"
+services:
+  golang:
+    image: taozhihu/docsify:0.0.1
+    container_name: doc_golang
+    cap_add:
+      - SYS_PTRACE
+    ports:
+    # API，必须开
+      - "23000:3000" 
+    restart: always
+    volumes:
+      # 挂载文件
+      - ./golang:/data/docs
+    command: docsify serve ./
+  flutter:
+    image: taozhihu/docsify:0.0.1
+    container_name: doc_flutter
+    cap_add:
+      - SYS_PTRACE
+    ports:
+    # API，必须开
+      - "23001:3000" 
+    restart: always
+    volumes:
+      # 挂载文件
+      - ./flutter:/data/docs
+    command:  docsify serve ./
+  gsyh_daily:
+    image: taozhihu/docsify:0.0.1
+    container_name: doc_gsyh_daily
+    cap_add:
+      - SYS_PTRACE
+    ports:
+    # API，必须开
+      - "23002:3000" 
+    restart: always
+    volumes:
+      # 挂载文件
+      - ./gsyh_daily:/data/docs
+    command:  docsify serve ./
