@@ -39,3 +39,16 @@ services:
       # 挂载文件
       - ./gsyh_daily:/data/docs
     command:  docsify serve ./
+  dt:
+    image: taozhihu/docsify:0.0.1
+    container_name: doc_dt
+    cap_add:
+      - SYS_PTRACE
+    ports:
+    # API，必须开
+      - "23003:3000" 
+    restart: always
+    volumes:
+      # 挂载文件
+      - ./dt:/data/docs
+    command:  docsify serve ./
