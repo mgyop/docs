@@ -26,6 +26,6 @@
   * [黑名单](order/index.md)
   * [设置](order/index.md)
 * 业务员端app接口
-* 团长 
+* 团长端app接口
 * 代理商 
 * 运营导师  
