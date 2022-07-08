@@ -9,7 +9,6 @@
   * [系统设置](order/index.md)
   * [照妖镜管理](order/index.md)
   * [日志管理](order/index.md)
-  * [权限设置](order/index.md)
   * [省市区管理](order/index.md)
   * [消息管理](order/index.md)
 
@@ -26,4 +25,4 @@
   * [财务管理](order/index.md)
   * [黑名单](order/index.md)
   * [设置](order/index.md)
-
+* ...
